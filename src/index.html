@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <section class="promo">
+    <header>
+      <div class="container">
+        <div class="row">
+          <button class="btn btn-primary d-lg-none btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Меню</button>
+          <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Меню "La Home"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav nav-position">
+                <li class="nav-item">
+                  <a class="nav-link active nav-offcanvas" aria-current="page" href="#blok1">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-offcanvas" href="#blok2">Предложения</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-offcanvas" href="#blok3">Наши работы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-offcanvas" href="/src/stocks.html" target="_blank">Акции</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-offcanvas" href="tel:+79517763283">+7 (951) 776 32 83</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="promo_text">
+          <h1 class="stock_text"> <span> La Home </span> <br> И мы дарим Вам скидку 30% на первое посещение!</h1>
+          <div class="promo_subheader">Если Вам понравится и хотите получать постоянные акции, <br> то можете
+            зарегестрировать свой профиль! <br> Если уже есть профиль, то можете войти!</div>
+          <div class="button">
+            <a href="/src/register.html" target="_blank" class="link_register"><button type="button"
+                class="btn btn-dark btn_margin">Регистрация</button></a>
+            <a href="/src/signUp.html" target="_blank" class="link_avto"><button type="button"
+                class="btn btn-dark btn_margin">Войти в "личный кабинет"</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="about_of_me">
+        <p class="about_me" id="blok1">Почему выбирают нас?</p>
+        <div class="slogan">
+          <p class="masters">Наши мастера долго трудились, чтобы вы стали Богинями! <br> Мы заставим вас сиять!</p>
+        </div>
+        <div class="choice">
+          <div class="card text-bg-secondary border-light mb-3" style="max-width: 1150px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/src/img/girl.jpg" class="img-fluid rounded-start girl-media" alt="Девушка">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">С заботой и вниманием мы подберем правильный краситель и уход для каждого, а
+                    также посоветуем, чем пользоваться дома, чтобы волосы сияли, как в первый день после салона.
+                    <br><br> Только вы выбираете, что хотели бы — яркий дерзкий образ или спокойное окрашивание. А наши
+                    мастера сделают все, чтобы вы остались довольны!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <button class="btn_light_green btn-primary center" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Записаться</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Введите номер и мы перезвоним!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <form action="" method="">
+                  <input type="tel" name="tel" id="#" placeholder="Введите номер" class="num_phone">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <input class="btn btn-primary" type="submit" value="Отправить">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="card_and_carousel">
+      <div class="container">
+        <div class="row">
+          <hr>
+          <div class="offers">
+            <p id="blok2">Предложения</p>
+          </div>
+          <div class="cards">
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/ucladka.jpeg" class="card-img-top" alt="Укладка волос">
+              <div class="card-body">
+                <h5 class="card-title">Укладка волос</h5>
+                <p class="card-text">Что каждая женщина должна знать об ежедневной укладке волос? Мы знаем и расскажем!
+                  Приходите к нам!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/strihka.jpg" class="card-img-top" alt="Стрижка волос">
+              <div class="card-body">
+                <h5 class="card-title">Стрижка волос</h5>
+                <p class="card-text">Хотите быть самой желанной для своего мужчины? Приходите к нам и мы подберём вам
+                  стрижку!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/manikur.jpg" class="card-img-top" alt="Маникюр">
+              <div class="card-body">
+                <h5 class="card-title">Маникюр</h5>
+                <p class="card-text">Почему весь февраль мы делаем маникюр по 300 рублей? Это не случайность!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/pedikur.jpg" class="card-img-top" alt="Педикюр">
+              <div class="card-body">
+                <h5 class="card-title">Педикюр</h5>
+                <p class="card-text">Самый эффективный способ наращивания ногтей, который позволит относить маникюр
+                  дольше
+                  3-х недель любой длинны без сколов и отслоек!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/brovi.jpeg" class="card-img-top" alt="Брови">
+              <div class="card-body">
+                <h5 class="card-title">Уход за бровями</h5>
+                <p class="card-text">Внутренняя красота — это важно, но идеальные брови не повредят!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="/src/img/img_cards/resnitsi.jpg" class="card-img-top" alt="Ресницы">
+              <div class="card-body">
+                <h5 class="card-title">Ресницы</h5>
+                <p class="card-text">Не можете найти своего мастера, потому что не могут вам сделать ресницы? Ожидаем
+                  вас
+                  у наших мастеров по ресницам!</p>
+                <a href="#" class="btn_card btn btn-primary">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Наши работы -->
+        <div class="myRabots">
+          <p class="rabots" id="blok3">
+            Наши работы
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="back_color">
+      <div class="container">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="/src/img/carousel/1689141613_glamours-name-p-ukladka-volos-v-salone-zhenskie-vkontakte-43.jpg"
+                class="d-block w-100" alt="Волосы">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/src/img/carousel/51ff6237a241e757edbd18ff8a5f7a6c.jpg" class="d-block w-100" alt="Брови">
+            </div>
+            <div class="carousel-item">
+              <img src="/src/img/carousel/ca8ca967079a7a7629f056a928cee184.jpeg" class="d-block w-100" alt="Педикюр">
+            </div>
+            <div class="carousel-item">
+              <img src="/src/img/carousel/f1a9cead095fae7dbc91d6192c05aa27.jpeg" class="d-block w-100" alt="Маникюр">
+            </div>
+            <div class="carousel-item">
+              <img src="/src/img/carousel/kng.jpg" class="d-block w-100" alt="Ещё маникюр">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- Футер -->
+      <footer class="py-3 my-4">
+        <div class="container">
+          <div class="container_nav">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav_link active" aria-current="page" href="#blok1">О нас</a>
+              <a class="flex-sm-fill text-sm-center nav_link" href="#blok2">Предложения</a>
+              <a class="flex-sm-fill text-sm-center nav_link" href="##blok3">Наши работы</a>
+              <a class="flex-sm-fill text-sm-center nav_link" href="/src/stocks.html" target="_blank">Акции</a>
+              <a class="flex-sm-fill text-sm-center nav_link" href="tel:+79517763283">+7 (951) 776 32 83</a>
+            </nav>
+          </div>
+          <hr>
+      </footer>
+        <!-- <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            
+            <li class="nav-item">
+              <a href="#" class="nav_link px-2 text-muted">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav_link px-2 text-muted">Предложения</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav_link px-2 text-muted">Наши работы</a>
+            </li>
+            <li class="nav-item">
+              <a href="/src/stocks.html" class="nav_link px-2 text-muted">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a href="tel:+79517763283" class="nav_link px-2 text-muted" target="_blank">+7 (951) 776 32 83</a>
+            </li>
+          </ul>
+        </footer> -->
+      </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
