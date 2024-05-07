@@ -14,9 +14,13 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
+<style>
+  .link_register {
+    text-decoration: none;
+  }
+</style>
 <body>
   <div class="stocks_img">
     <div class="container display">
@@ -34,7 +38,7 @@
           <div class="stocksSecond">
             <p class="stocksParTwo circle">02</p>
             <p class="birthday">День рождение! Скида 20% за три дня и после Вашего дня рождения! <br> Только при
-              предъяалении документов, удостовееряющих личность!</p>
+              предъявлении документов, удостоверяющих личность!</p>
           </div>
         </div>
       </div>
@@ -47,27 +51,8 @@
         </div>
       </div>
     </div>
-    <button class="btn_light_green btn-primary btn_action" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">Записаться</button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Введите номер и мы перезвоним!</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-          </div>
-          <div class="modal-body">
-            <form action="" method="">
-              <input type="tel" name="tel" id="#" placeholder="Введите номер" class="num_phone">
-            </form>
-          </div>
-          <div class="modal-footer">
-            <input class="btn btn-primary" type="submit" value="Отправить">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a href="frontWish.php" target="_blank" class="link_register"><button class="btn_light_green btn-primary center" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">Записаться</button></a>
   </div>
   <section>
     <!-- Футер -->
@@ -75,11 +60,7 @@
         <footer class="py-3 my-4 backgraund">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
-              <a href="" class="nav_link px-2 text-muted">О нас</a>
-              <a href="" class="nav_link px-2 text-muted">Предложения</a>
-              <a href="" class="nav_link px-2 text-muted">Наши работы</a>
-              <a href="/src/stocks.html" class="nav_link px-2 text-muted">Акции</a>
-              <a href="tel:+79517763283" class="nav_link px-2 text-muted">+7 (951) 776 32 83</a>
+              <a class="flex-sm-fill text-sm-center nav_link" href="questionFORM.html" target="_blank">Появилис вопросы? Напишите нам!</a>
             </li>
           </ul>
         </footer>

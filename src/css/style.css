@@ -82,7 +82,8 @@
     margin: 20px 30px 0 0 ;
 }
 
-.promo .promo_text .button .link_register .btn {
+.promo .promo_text .button .link_register .btn { 
+    text-decoration: none;
     border: #fff solid 1px;
     background: transparent;
     padding: 15px;
@@ -593,6 +594,12 @@ hr {
     min-height: 30px;
     margin-top: 20px;
 }
+/* Страница админа */
+.center_btn_choise {
+    border: #000 solid 2px;
+}
+
+
 
 @media screen and (max-width: 1210px) {
     .stocks .stocks_body_Second {

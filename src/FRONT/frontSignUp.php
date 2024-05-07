@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -17,26 +17,22 @@
       <div class="form-container">
         <h3 class="title">Авторизация</h3>
         <span class="description">Введите данные для авторизации:</span>
-        <form class="form-horizontal">
+        <form action="../BACK/signUp.php" class="form-horizontal" method="post">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name" />
+            <input type="text" class="form-control" name="login" placeholder="login" />
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email" />
+            <input type="password" class="form-control" name="password" placeholder="Password" />
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password" />
-          </div>
-          <div class="form-group">
-            Забыли пароль или ещё <a href="/src/register.html" class="forgot_password">не регистрировались</a>?
+            Забыли пароль или ещё <a href="../FRONT/frontRegister.php" class="forgot_password">не регистрировались</a>?
           </div>
           <div class="form-group">
             <input type="checkbox" class="checkbox" />
             <span class="check-label">Я согласен с <a href="">Условиями</a> и
               <a href="">Политикой конфиденциальности.</a></span>
           </div>
-          <button class="btn signup">Sign up</button>
-          <button class="btn signin">Sign in</button>
+          <button class="btn signin">Войти</button>
         </form>
       </div>
     </div>
